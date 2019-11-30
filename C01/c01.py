@@ -102,11 +102,9 @@ def main():
     SystemDecyzyjny.minAttributeValue(lines, SystemDecyzyjny.getNumericAttributes(array))
     SystemDecyzyjny.maxAttributeValue(lines, SystemDecyzyjny.getNumericAttributes(array))
     SystemDecyzyjny.switchColumnsToRows(SystemDecyzyjny.listAttributesAndTheirNumbers(open("C01/australian.txt").read()))
-    classes = SystemDecyzyjny.sortAttrToSpecifiedClass(SystemDecyzyjny.separateClasses(array),
-                                                       SystemDecyzyjny.listAttributesAndTheirNumbers(
-                                                           open("C01/australian.txt").read()))
+    classes = SystemDecyzyjny.sortAttrToSpecifiedClass(SystemDecyzyjny.separateClasses(array), SystemDecyzyjny.listAttributesAndTheirNumbers(open("C01/australian.txt").read()))
     SystemDecyzyjny.numberOfAttributesInClass(classes, SystemDecyzyjny.switchColumnsToRows(
-        SystemDecyzyjny.listAttributesAndTheirNumbers(open("C01/australian.txt").read())))
+    SystemDecyzyjny.listAttributesAndTheirNumbers(open("C01/australian.txt").read())))
     SystemDecyzyjny.standardDeviation(classes, SystemDecyzyjny.getNumericAttributes(array))
 
 
